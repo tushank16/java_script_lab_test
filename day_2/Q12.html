@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+            Q12
+        </title>
+</head>
+<body>
+	<!-----  string to convert uppercase--->
+        <h3> Enter string.</h3>
+		<input type="text" id="n1" onkeydown="myFunction()"/>
+		<input type="text" id="n2" ></input>
+		<br/><br/>
+
+		<br/><br/>
+		<p id="demo"></p>
+		
+        <script>
+			function myFunction() 
+			{
+				var str = document.getElementById('n1').value;
+				var res = str.toLocaleUpperCase();
+				document.getElementById("demo").innerHTML = res;
+				document.getElementById("n2").innerHTML = res;
+				n2.value = n1.value;
+			}
+		</script>
+</body>
+<body>
+
