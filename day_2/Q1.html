@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Q1
+        </title>
+    </head>
+    <body>
+	<!----- Create an array having 10 numbers , write a function whose 
+	job is to return max number from the array --->
+        <h3> Return max number from the array</h3>
+		<button onclick="myFunction()">Max No.</button>
+
+        <p id = "max"></p>
+        
+        <script>
+			var arr = [2,45,30,37,78,29,18,84,52,98];
+			document.getElementById('max').innerHTML= arr;
+			   function myFunction() 
+				{
+				  arr.sort(function(a, b){return a - b});
+				  document.getElementById("max").innerHTML = arr[arr.length-1];
+				}
+		</script>
+    </body>
+</html>
