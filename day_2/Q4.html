@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+            Q4
+        </title>
+</head>
+<body>
+	<!-----  Write your name with font size 4. On button click change it to 7--->
+        <h3> Click button to change name to font size 7</h3>
+		<button onclick="myFunction()">Click Me</button>
+
+        <p id = "name" ></p>
+        
+        <script>
+			var str = "Tushank Shingte";
+			document.getElementById("name").innerHTML = str;
+			function myFunction() 
+			{
+				var result = str.fontsize(7);
+				document.getElementById("name").innerHTML = result;
+			}
+		</script>
+</body>
+
+<body>
