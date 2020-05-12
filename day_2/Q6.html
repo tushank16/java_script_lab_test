@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+            Q6
+        </title>
+</head>
+<body>
+	<!-----  reate two text boxes and a button , on button click it should copy data from one text box to another--->
+        <h3> Click button to display current date time</h3>
+		<input type="text" id="a" /><br/><br/>
+        <input type="text" id="b"/><br/><br/>
+        <button onclick="myFunction()">Click Me</button>
+
+        <script>
+			function myFunction() 
+			{
+				var n1 = document.getElementById('a');
+				var n2 = document.getElementById('b');
+				n2.value = n1.value;
+			}
+		</script>
+</body>
+
+<body>
