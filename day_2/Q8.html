@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Q8
+        </title>
+    </head>
+    <body>
+	<!----- Create an array having 5 names and display it in descending order--->
+        <h3> Click button to display 5 name in descending order</h3>
+		<button onclick="myFunction()">Click Me</button>
+
+		<p id="name"></p>
+        
+        <script>
+				var a = [ "nihir","tushank","raj", "sanyog", "ojas"];
+				document.getElementById('name').innerHTML = a;
+			    function myFunction() 
+				{
+				a.sort();
+				a.reverse();
+				document.getElementById('name').innerHTML = a;
+				}
+		</script>
+    </body>
+</html>
