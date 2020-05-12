@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Q7
+        </title>
+    </head>
+    <body>
+	<!----- Create an array having 10 numbers and display it in ascending order--->
+        <h3> Click button to sort in ascending order</h3>
+		<button onclick="myFunction()">Click Me</button>
+
+		<p id="name"></p>
+        
+        <script>
+				var a = [40, 100, 1, 5, 25, 10, 60, 70 , 80, 50];
+				document.getElementById('name').innerHTML = a;
+			    function myFunction() 
+				{
+				a.sort((function(a, b){return a - b}));
+				document.getElementById('name').innerHTML = a;
+				}
+		</script>
+    </body>
+</html>
