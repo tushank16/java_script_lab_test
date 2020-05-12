@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Q9
+        </title>
+    </head>
+    <body>
+	<!----- Declare a string having an email Id and check if @ is there in the string or not--->
+		<h3>Enter the Email Id</h3>
+		<input name="mobile" type="text" id="n1"/><br/><br/>
+		<button onclick="myFunction()">Validate Email id</button>
+		<br/><br/>
+        <p id = "name"></p>
+
+        <script>
+		function myFunction()
+		{
+            var s =  document.getElementById('n1').value;
+			var t = document.getElementById('n1').value;
+            if(s.indexOf('@') > -1)
+            {
+                alert("Email id valid");
+            }
+            else{
+                alert("Incorrect Email id");
+            }
+			document.getElementById('name').innerHTML=t;
+
+		}
+        </script>
+    </body>
+</html>
