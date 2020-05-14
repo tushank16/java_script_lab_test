@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+             Day 3/4->Q4
+        </title>
+    </head>
+<body>
+        <p id = "account"></p>
+<!----- Create class Account having instance member name , balance .
+ It has method deposit whose job is to increase balance. 
+ Create a child class current account inheriting from Account class.
+ It has method withdraw whose job is to  reduce the balance. 
+ Create two objects of current account and call deposit and withdraw method.
+ Child class has show method whose job is to display name and new balance. --->
+
+
+
+        <script>
+            class Account{
+                constructor(name, balance)
+                {
+                    this.name = name;
+                    this.balance = balance;
+                }
+                deposit(amt)
+                {
+                    this.balance += amt;
+                }
+            }
+            class currentAccount extends Account{
+                withdraw(amt)
+                {
+                    this.balance -= amt;
+                }
+                show()
+                {
+                    document.getElementById('account').innerHTML = this.name + " " + this.balance;
+                }
+
+            }
+            tushank = new currentAccount("Tushank",2000);
+			shashank = new currentAccount("Tushank",2000);
+			shashank.withdraw(1000);
+            tushank.deposit(20000);
+			tushank.show();
+        </script>
+    </body>
+</html>
