@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Day 3/4->Q2
+        </title>
+    </head>
+    <body>
+	<!----- Create class Account having property name, balance. 
+			Write method deposit whose job is to increase balance with the amount deposited by user. 
+			Create two object sand call deposit method. 
+			Write method display which will display name and balance --->
+		<p>Bank Details</p>
+		<p>Initial balance</p>
+		<p id= "demo"></p><br/>
+		<p>deposit balance</p>
+		<p id= "demo1"></p><br/>
+		<p>Final balance</p>
+		<p id= "demo2"></p><br/>
+
+        <script>
+           class Account
+		    {
+				name = "";
+				balance = 0;
+				constructor(name , balance)
+				{
+					this.name = name;
+					this.balance = balance;
+					document.getElementById('demo').innerHTML =" Name of the account: " + this.name + "; with Initial balance: " + this.balance;
+				}
+				deposit(amt)
+				{
+					this.balance += amt;
+					document.getElementById('demo1').innerHTML = amt + " ₹ deposited to " + this.name + "'s account";
+				}
+				display()
+				{
+					document.getElementById('demo2').innerHTML = " Name of the account: " + this.name + "; Balance:" + this.balance;
+				}
+			}
+			acc = new Account('tushank' , 10000);
+			acc.display();
+			acc.deposit(5000);
+			acc.display();
+        </script>
+    </body>
+</html>
