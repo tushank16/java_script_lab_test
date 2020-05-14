@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Day 3/4->Q1
+        </title>
+    </head>
+    <body>
+	<!----- Using arrow function, print factorial of a number--->
+		<h3>Enter no whose factorial is to be found</h3>
+		<input type="number" id="n1"/><br/><br/>
+		<button onclick="myFunction()">Find Factorial</button>
+		<br/><br/>
+        <p id = "factorial"></p>
+
+        <script>
+		function myFunction()
+		{
+            var x = document.getElementById('n1').value;
+            document.getElementById('factorial').innerHTML = fun(x);
+        }
+		  fun = (a) => {
+                if(a == 0)
+                {
+                    return 1;
+                }
+                else {
+                    return a * fun(a-1);
+                }
+            }
+        </script>
+    </body>
+</html>
