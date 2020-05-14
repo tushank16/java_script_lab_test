@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+             Day 3/4->Q3
+        </title>
+    </head>
+    <body>
+<!----- Create class math having two static methods, cube and square, whose job is to return the square and cube of a number--->
+        <h3> Enter no to find the square and cube  </h3>
+		<input type="number" id="n1" oninput="myFunction()"/><br/><br/>
+		<span>square</span> <span id="square"></span>
+        <br/><br/>
+		<span>cube</span>	<span id="cube"></span>
+<script>
+function myFunction() 
+{
+	
+	var a = document.getElementById('n1').value;
+	document.getElementById("cube").innerHTML=math.cube(a);
+	document.getElementById("square").innerHTML=math.square(a);
+}
+class math 
+{
+	static square(num) 
+	{
+		return num*num;
+	}
+	static cube(num)
+	{
+	    return num*num*num;
+	}
+}
+</script>
+
+</body>
+</html>
