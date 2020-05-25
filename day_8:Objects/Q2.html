@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 Q2</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      class Student {
+    //Assuming total(outof) marks is 100 per subject
+        constructor (rNumber,name, marks1, marks2, marks3) {
+            this.rNumber = rNumber;
+            this.name = name;
+            this.marks1 = marks1;
+            this.marks2 = marks2;
+            this.marks3 = marks3;
+        }
+
+        set setNumber (rNumber) {
+            this.rNumber = rNumber;
+        }
+        get getNumber () {
+            return this.rNumber;
+        }
+
+        set setName (name) {
+            this.name = name;
+        }
+        get getName() {
+            return this.name;
+        }
+
+        set setMarks1 (marks1) {
+            this.marks1 = marks1;
+        }
+        get getMarks1 () {
+            return this.marks1;
+        }
+
+        set setMarks2 (marks2) {
+            this.marks2 = marks2;
+        }
+        get getMarks2 () {
+            return this.marks2;
+        }
+
+        set setMarks3 (marks3) {
+            this.marks3 = marks3;
+        }
+        get getMarks3 () {
+            return this.marks3;
+        }
+        get getTotal () {
+            var total = this.marks1 + this.marks2 + this.marks3;
+            return total;
+        }
+        get getPercentage () {
+            var percent = (this.marks1 + this.marks2 + this.marks3)/3;
+            return percent;
+        }
+        
+    }
+
+
+    var x = new Student();
+    x.setNumber = 1;
+    x.setName = "Ken";
+    x.setMarks1 = 60;
+    x.setMarks2 = 70;
+    x.setMarks3 = 80;
+    
+    document.getElementById("demo").innerHTML = "Roll number: " +
+    x.getNumber + "; Name: " + x.getName + ", Marks: " +
+    x.getMarks1 + ", " + x.getMarks2 + ", " + x.getMarks3 + ", " + 
+    "; Total: " + x.getTotal + "; Percentage: " +
+    x.getPercentage+"%";  
+    </script>
+</body>
+</html>
