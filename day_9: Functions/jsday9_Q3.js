@@ -6,4 +6,4 @@ function sum() {
     }
     return sum;
   }
-document.getElementById("sum").innerHTML = sum(1, 123, 115, 44, 88);
+document.getElementById("sum").innerHTML = sum(131, 153, 16, 78, 38);
