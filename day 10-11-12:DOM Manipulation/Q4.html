@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Day 10-11-12 Q4</title>
+    
+</head>
+<body>
+    <input type="radio" name="color" id="red" onclick="red()">
+    <label for="Red">Red</label><br>
+
+    <input type="radio" name="color" id="blue" onclick="blue()">
+    <label for="Blue">Blue</label><br>
+
+    <input type="radio" name="color" id="yellow" onclick="yellow()">
+    <label for="Yellow">Yellow</label><br><br>
+    
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <h1>user</h1>
+    <script>
+        /*
+         Create three radio buttons which show names of colour.
+         Create a text box. Let user enter name in text box and select radio button , 
+         on clicking the text in a text box should get respective colour.
+        */
+        var h1 = document.querySelector("h1");
+        var nameInput = document.getElementById("name");
+        function red() {
+            h1.style.color = "red";
+        }
+        function blue() {
+            h1.style.color = "blue";
+        }
+        function yellow() {
+            h1.style.color = "yellow";
+        }
+        nameInput.addEventListener("change", function () {
+            h1.textContent = nameInput.value;
+        });
+    </script>
+
+</body>
+</html>
