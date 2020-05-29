@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Create text box and a span tag , on change it should give error if user keeps text box empty.
+    -->
+    <h2>Enter text in the text box  </h2>
+    <input type="text" oninput="text()"><span></span>
+    <script>
+       
+        var span = document.querySelector("span");
+
+        function text() {
+            var input = document.querySelector("input");
+            span.textContent = input.value;
+            if(input.value === "")
+            {
+                span.textContent="enter some text";
+            }
+            
+        }
+    </script>
+
+</body>
+</html>

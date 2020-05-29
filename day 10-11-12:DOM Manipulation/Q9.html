@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10-11-12 Q9</title>
+</head>
+<body>
+    <!--
+     Create a textbox ,and a span tag,  on change event on text box 
+     it should display data entered in text box in span tag which is next to it text box.
+    -->
+    <h2>Enter text in the text box  </h2>
+    <input type="text" oninput="text()"><SPan></SPan>
+    <script>
+        var input = document.querySelector("input");
+        var span = document.querySelector("span");
+
+        function text() {
+            span.textContent = input.value;
+        }
+        /*
+        input.addEventListener("change", function() {
+            span.textContent = input.value;
+        })*/
+    </script>
+</body>
+</html>
