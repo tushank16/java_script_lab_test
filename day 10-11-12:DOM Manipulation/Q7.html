@@ -21,11 +21,15 @@
     <br>
     <input type="button" value="Calculate p tags" onclick="CalculatePTag()">
     <script>
-        var a = document.querySelectorAll("p");
+         var a = document.querySelectorAll("p");
         var op = document.getElementById("op");
         function CalculatePTag(){
             op.textContent = a.length;
+            for (var i = 0; i < a.length; i++ ){
+                a[i].classList.add("colour");
+            }
         }
+
 
     </script>
     
