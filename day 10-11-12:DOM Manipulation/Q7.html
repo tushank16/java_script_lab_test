@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10-11-12 Q7</title>
+</head>
+<body>
+     <!--
+    Write at least 3 paragraph about yourself. 
+    Create a button on click it should count number of p tags used in document.
+    Also give blue background colour to all p tags.
+    -->
+    <H1>Tushank Shingte</H1>
+    <p>My name in Tushank Shingte</p>
+    <p>I am currently pursuing my PG Diploma Course in Advance Computing form CDAC </p>
+    <p>My favorate subjects are C , C++ and Javascript</p>
+    <p>I live in Parel Mumbai</p>
+    <p>My Hobbies are Treking and Collecting Coins</p>
+    <p id = "op"></p>
+    <br>
+    <input type="button" value="Calculate p tags" onclick="CalculatePTag()">
+    <script>
+        var a = document.querySelectorAll("p");
+        var op = document.getElementById("op");
+        function CalculatePTag(){
+            op.textContent = a.length;
+        }
+
+    </script>
+    
+</body>
+</html>

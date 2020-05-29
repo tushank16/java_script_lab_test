@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10-11-12 Q6</title>
+</head>
+<body>
+     <!--
+Create three text boxes and two radio buttons showing value “add” and “subtract”. 
+Let user enter number in two text boxes and as per the selected radio button 
+it should display result in the 3rd text box.
+    -->
+    <label >A: </label>
+    <input type="number" id="a" required><br><br>
+    <label >Choose the operation:</label><br>
+    <input type="radio" name="operation" id="add" onchange="add()">
+    <label>Add</label><br>
+
+    <input type="radio" name="operation" id="subtract" onchange="subtract()">
+    <label>Subtract</label><br><br>
+
+    <label >B: </label>
+    <input type="number" id="b" required><br><br>
+    
+    <label >Output: </label>
+    <input type="text" id="c">
+
+    <script>
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        var Output = document.getElementById("c");
+        var p = document.getElementById("op");
+        function add() {
+            Output.value = Number(a.value)+Number(b.value);
+        };
+        function subtract() {
+            Output.value = Number(a.value)-Number(b.value);
+        }
+    </script>
+</body>
+</html>
