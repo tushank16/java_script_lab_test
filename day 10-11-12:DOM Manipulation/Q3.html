@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10-11-12 Q3</title>
+    <style>
+        .initial{
+            background-color: royalblue;
+            color: snow;
+            text-align: center;
+        }
+        .final{
+            background-color: snow;
+            color: royalblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <p class="initial">Tushank</p>
+    <input type="button" value="Click" onclick="myFunction()">
+    <script>
+        /*Write your name in p tag with background colour blue and text in white colour , 
+        on button click it should reverse the colour ie. Text colour blue and background colour white*/
+        function myFunction() {
+            var p = document.querySelector("p");
+            p.classList.add("final");
+        }
+    </script>
+</body>
+</html>
