@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10-11-12 Q5</title>
+</head>
+<body>
+    <!--
+    Create a dropdown box showing the number 1 to 10.
+    Write your name in p tag let user select option from dropdown and that 
+    font size should be applied to the data in p tag
+    -->
+    
+    <label >Choose the size for p tag:</label>
+    <select id="ptag">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <br><br>
+    <p id="name">Tushank</p>
+    <script>
+        var ptg = document.getElementById("name");
+        var size =  document.getElementById("ptag");
+        size.addEventListener("change", function (val) {
+           ptg.style.fontSize =  this.value + "px";
+        });
+                
+    </script>
+</body>
+</html>
