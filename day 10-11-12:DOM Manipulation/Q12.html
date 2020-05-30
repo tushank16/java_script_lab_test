@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10-11-12 Q12</title>
+</head>
+<body>
+    <!--
+    Create three check boxes showing book name and price. 
+    Create a text box. 
+    As per selection of check box , text box should show total of selected price.
+    -->
+    <h2>Books</h2>
+    <input type="checkbox" class="checkbox" name="Ramayan" id="Ramayan" value="500" >Ramayan</input><br><br>
+    <input type="checkbox" class="checkbox" name="Mahabaharat" id="Mahabaharat" value="1000">Mahabaharat</input><br><br>
+    <input type="checkbox" class="checkbox" name="Geeta" id="Geeta" value="1500" >Geeta</input><br><br>
+
+    <input type="text" id="output">
+    <script>
+        var output = document.getElementById("output");
+        var input = document.getElementsByClassName("checkbox");
+
+        var sum = 0;
+        input[0].addEventListener("click", function () {
+            if(this.checked == true) {
+                sum += Number(input[0].value);
+            }
+            else {
+                sum -= Number(input[0].value);
+            }
+            output.value =  sum ;
+        });
+
+        input[1].addEventListener("click", function () {
+            if(this.checked == true) {
+                sum += Number(input[1].value);
+            }
+            else {
+                sum -= Number(input[1].value);
+            }
+            output.value =  sum;
+        });
+
+        input[2].addEventListener("click", function () {
+            if(this.checked == true) {
+                sum += Number(input[2].value);
+            }
+            else {
+                sum -= Number(input[2].value);
+            }
+            output.value =  sum;
+        });
+        
+    </script>
+</body>
+</html>
