@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10-11-12 Q11</title>
+</head>
+<body>
+    <h2>Enter Password:</h2>
+    <input type="password" id="password" oninput="validate()"><span></span>
+    <script>
+        function validate() {
+            var input = document.querySelector("input").value;
+            var span = document.querySelector("span");
+            var output = "";
+            var patt1 = /[a-z]/g; 
+            var result1 = input.match(patt1);
+            if(!result1)
+            {
+                output += " Don't contain lowercase letter"; 
+            }
+            var patt2 = /[A-Z]/g; 
+            var result2 = input.match(patt2);
+            if(!result2)
+            {
+                output += "\n Don't contain uppercase letter"; 
+            }
+            var patt3 = /[0-9]/g; 
+            var result3 = input.match(patt3);
+            if(!result3)
+            {
+                output += "\n Don't contain Number"; 
+            }
+            
+            span.textContent = output;
+        }
+    </script>
+</body>
+</html>
