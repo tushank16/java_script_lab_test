@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 10-11-12 Q11</title>
+    <style>
+        .color{
+            color:red;
+        }
+    </style>
 </head>
 <body>
     <h2>Enter Password:</h2>
-    <input type="password" id="password" oninput="validate()"><span></span>
+    <input type="password" id="password" oninput="validate()"><span class ="color" ></span>
     <script>
         function validate() {
             var input = document.querySelector("input").value;
@@ -17,21 +22,26 @@
             var result1 = input.match(patt1);
             if(!result1)
             {
-                output += " Don't contain lowercase letter"; 
+                output += " Don't contain lowercase letter."; 
             }
             var patt2 = /[A-Z]/g; 
             var result2 = input.match(patt2);
             if(!result2)
             {
-                output += "\n Don't contain uppercase letter"; 
+                output += "\n Don't contain uppercase letter."; 
             }
             var patt3 = /[0-9]/g; 
             var result3 = input.match(patt3);
             if(!result3)
             {
-                output += "\n Don't contain Number"; 
+                output += "\n Don't contain Number."; 
             }
-            
+            var patt4 = /\W/g;
+            var result4 = input.match(patt4);
+            if(!result4)
+            {
+                output += "\n Don't contain Special Character."; 
+            }
             span.textContent = output;
         }
     </script>
