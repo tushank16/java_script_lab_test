@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .focus{
+      border-style: dotted;
+      border-color:gray;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!--Create a text box, on blur give grey color to textbox-->
+  <label for="textbox">Enter in textbox</label><br>
+  <input type="text">
+  <script>
+    $(document).ready(function(){
+    $("input").blur(function(){$("input").addClass("focus");});
+    $("input").focus(function(){$("input").removeClass("focus");});
+  });
+  </script>
+</body>
+</html>
