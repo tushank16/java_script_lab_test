@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <!--Create image and button onbutton click hide the image-->
+  <button id="hide">Hide</button>
+  <button id="show">Show</button><br><br><br>
+  <img src="redfort.jpg" alt="" height="500px">
+  <script>
+  $(document).ready(function(){
+    $("#hide").click(function(){$("img").hide();});
+    $("#show").click(function(){$("img").show();});
+  });
+  </script>
+</body>
+</html>
