@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q5</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .green{
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <!--Create a text box when you type in it the color of text should be green-->
+  <label for="textbox">Enter in textbox</label><br>
+  <input type="text">
+  <script>
+    $(document).ready(function(){
+    $("input").focus(function(){$("input").addClass("green");});
+    $("input").blur(function(){$("input").removeClass("green");});
+  });
+  </script>
+</body>
+</html>
