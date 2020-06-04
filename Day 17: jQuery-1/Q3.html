@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    h1{
+      color: blue;
+      text-align: center;
+    }
+    .red{
+      border-style: solid;
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+  <!--Write your name in h1 tag with blue color 
+    on mouse enter it should display red border around it.-->
+  <h1>Tushank Shingte</h1>
+  <script>
+    $(document).ready(function(){
+    $("h1").mouseenter(function(){$("h1").addClass("red");});
+    $("h1").mouseleave(function(){$("h1").removeClass("red");});
+  });
+  </script>
+</body>
+</html>
