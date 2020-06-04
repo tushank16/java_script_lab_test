@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <!--Create a paragraph, write 5 line about you. 
+  on mouse over hide paragraph and on mouse out show paragraph-->
+  <p>
+    Hello my name is Tushank Shingte.<br>
+    I am a Mechanical Engineer.<br>
+    I'm currently pursuing my PG diploma in Advance computing @CDAC Vita.<br>
+    My favourate languages are Cpp and JavaScript.<br>
+    my hobbies are treking and Collecting coins.<br>    
+  </p>
+  <script>
+    $(document).ready(function(){
+    $("p").mouseenter(function(){$("p").hide();});
+    $("p").mouseleave(function(){$("p").show();});
+  });
+  </script>
+</body>
+</html>
