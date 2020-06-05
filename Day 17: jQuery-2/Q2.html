@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+</head>
+<body>
+  <!--ype your name in h1 tag when you put mouse over it your name should be fade out-->
+  <h1>Tushank Shingte</h1>
+  <script>
+    $(document).ready(function (){
+      $("h1").mouseenter(function (){$("h1").fadeOut();})
+      $("h1").mouseleave(function (){$("h1").fadeIn();})
+    });
+  </script>
+</body>
+</html>
