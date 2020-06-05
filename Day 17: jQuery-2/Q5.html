@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q5</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <style> 
+    #main, #hidden {
+      text-align: center;
+      position: center;
+    }
+    .hidden {
+      display: none;
+    }
+    </style>
+</head>
+<body>
+  <!-- Create a paragraph on button click it should hide 
+    once hidden it should display message done with hiding  -->
+  <p id="main">This is a generic pragraph on button click the paragraph hides and a hidden message is shown</p>
+  <p id="hidden" class="hidden">Done with hiding</p><br><br>
+  <button id="btn1">Hide Paragraph</button>
+  <button id="btn2" class="hidden">Show Paragraph</button>
+
+  <script>
+  $(document).ready(function (){
+    $("#btn1").click(function (){ 
+      $("#hidden").removeClass("hidden");
+      $("#main").hide();
+      $("#btn1").addClass("hidden");
+      $("#btn2").removeClass("hidden");
+    });
+    $("#btn2").click(function (){ 
+      $("#hidden").addClass("hidden");
+      $("#main").show();
+      $("#btn2").addClass("hidden");
+      $("#btn1").removeClass("hidden");
+    });
+  });
+
+  </script>
+</body>
+</html>
