@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <style> 
+    #btn, #name {
+      text-align: center;
+      position: center;
+    }
+    #name {
+      display: none;
+    }
+    
+    </style>
+</head>
+<body>
+  <!--create a button on button click your name which is written in h3 tag
+     will slide up and then it will slide down  -->
+  <button id="btn">Slide Up/Down</button>
+  <h3 id="name">Tushank Shingte</h3>
+  <script>
+    $(document).ready(function (){
+      $("#btn").click(function (){$("h3").slideToggle("slow");})
+    });
+  </script>
+</body>
+</html>
