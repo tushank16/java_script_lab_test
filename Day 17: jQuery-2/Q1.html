@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    img{
+      width: 1000px;
+      height: 500px;
+      margin: 20px auto;
+      border: 10px solid rgb(124, 117, 50);
+      box-shadow: 0px 0px 3px 2px #ccc;   
+    }
+  </style>
+</head>
+<body>
+  <!--Create a button, on click it should display image
+     and if you click again it should hide image-->
+  <img src="a.jpg" alt="" srcset=""><br><br>
+  <button id="btn">Show/Hide Image</button>
+  <script>
+    $(document).ready(function () {
+      $("#btn").click(function (){$("img").toggle();}); 
+    });
+  </script>
+</body>
+</html>
