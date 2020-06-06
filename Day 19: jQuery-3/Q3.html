@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+</head>
+<body>
+  <!--Create a list of fruits and a radio buttons showing
+    fruits name which ever radio is clicked that fruit name should be add to list  -->
+    <h2>Radio Buttons For Fruits:</h2>
+
+    <form>
+      <input type="radio" id="Raspberry" name="fruit" value="Raspberry">
+      <label for="Raspberry">Raspberry</label><br>
+      <input type="radio" id="Cranberries" name="fruit" value="Cranberries">
+      <label for="Cranberries">Cranberries</label><br>
+      <input type="radio" id="Huckleberries" name="fruit" value="Huckleberries">
+      <label for="Huckleberries">Huckleberries</label>
+    </form> 
+    <ol>
+    </ol>
+    
+  <script>
+  $(document).ready(function(){
+    $("#Raspberry").click(function(){
+      $("ol").append("<li>Raspberry</li>");
+    })
+    $("#Cranberries").click(function(){
+      $("ol").append("<li>Cranberries</li>");
+    })
+    $("#Huckleberries").click(function(){
+      $("ol").append("<li>Huckleberries</li>");
+    })
+  });
+  </script>
+</body>
+</html>
