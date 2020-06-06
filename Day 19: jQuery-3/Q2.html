@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <style>
+    img{
+      width: 1000px;
+      height: 500px;
+      margin-top: 50px;
+      margin-left: 180px;
+      position: relative;
+    }
+    .border{
+      border: black solid 10px;
+    }
+  </style>
+</head>
+<body>
+  <!--  Create a image with border on mouse over it should remove border of the image  -->
+  <p align="center"> Image with border, on mouseover the border is removed </p>
+  <img src="a.jpg" class="border">
+  <script>
+  $(document).ready(function(){
+    $("img").mouseover(function(){
+      $("img").removeClass("border");
+    })
+    $("img").mouseleave(function(){
+      $("img").addClass("border");
+    })
+  });
+  </script>
+</body>
+</html>
