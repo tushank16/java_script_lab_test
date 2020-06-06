@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+</head>
+<body>
+  <!-- Create two text boxes and a buttons on click of button 
+    it should copy data from one text box to another  -->
+  <label for="">Input Here: </label>
+  <input type="text" id="ip1"><br><br>
+  <label for="">Output Here:</label>
+  <input type="text" id="ip2"><br><br>
+  <button id="btn">Click Me</button>
+  <script>
+  $(document).ready(function(){
+    $("#btn").click(function(){
+      var a = $("#ip1").val();
+      $("#ip2").val(a);
+    })
+  });
+  </script>
+</body>
+</html>
