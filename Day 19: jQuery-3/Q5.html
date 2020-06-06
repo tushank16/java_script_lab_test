@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q5</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  </head>
+<body>
+  <!-- Create radio buttons showing name of colors. Create a text area,  when user type text in text area it should get the color as per radio button clicked . -->
+  <p align="center"> when user type text in text area it should get the color as per radio button clicked </p>
+  <input type="radio" id="red" name="color" value="red">
+  <label for="red">Red</label><br>
+  <input type="radio" id="yellow" name="color" value="yellow">
+  <label for="yellow">Yellow</label><br>
+  <input type="radio" id="blue" name="color" value="blue">
+  <label for="blue">Blue</label><br><br>
+  <input type="text" id="text">
+  <script>
+  $(document).ready(function(){
+    $("#red").click(function(){
+      $("#text").css("color", "red");
+    })
+    $("#yellow").click(function(){
+      $("#text").css("color", "yellow");
+    })
+    $("#blue").click(function(){
+      $("#text").css("color", "blue");
+    })
+  });
+  </script>
+</body>
+</html>
