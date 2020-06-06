@@ -24,15 +24,9 @@
     </ol>
     
   <script>
-  $(document).ready(function(){
-    $("#Raspberry").click(function(){
-      $("ol").append("<li>Raspberry</li>");
-    })
-    $("#Cranberries").click(function(){
-      $("ol").append("<li>Cranberries</li>");
-    })
-    $("#Huckleberries").click(function(){
-      $("ol").append("<li>Huckleberries</li>");
+   $(document).ready(function(){
+    $("input:radio").click(function(){
+      $("ol").append("<li>"+$(this).val()+"</li>");
     })
   });
   </script>
