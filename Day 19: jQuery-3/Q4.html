@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  </head>
+<body>
+  <!-- Create P tag with some information on button click it should remove tag from page  -->
+  <p align="center"> Create P tag with some information on button click it should remove tag from pag </p>
+  <button>Click Me</button>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("p").remove();
+    })
+  });
+  </script>
+</body>
+</html>
